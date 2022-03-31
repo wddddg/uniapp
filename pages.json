@@ -1,0 +1,124 @@
+{	
+	"easycom": {
+			"autoscan": true,
+			"custom": {
+				"tui-(.*)": "@/components/ThorUI/thorui/tui-$1/tui-$1.vue"
+			}
+	},
+	"easycom": {
+			"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+		},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index"
+		},
+		{
+			"path": "pages/floor/floor"
+			// 下拉刷新
+			// "style":{
+			// 	"enablePullDownRefresh":true
+			// }
+		},
+		{
+			"path": "pages/aboutme/aboutme"
+		},
+		{
+			"path":"components/search/region/region",
+			"style":{
+				"titleNView": false,
+				"navigationStyle":"default",
+				"navigationBarTitleText":"选择城市"
+			}
+		},
+		{
+			"path":"components/search/searchfloor/searchfloor",
+			"style":{
+				"titleNView": false,
+				"navigationStyle":"default",
+				"navigationBarTitleText":"恒裕买房"
+			}
+		},
+		{
+			"path":"components/consulting/consulting",
+			"style":{
+				"titleNView": false,
+				"navigationStyle":"default",
+				"navigationBarTitleText":"低价捡漏"
+			}
+		},
+		// {
+		// 	"path":"components/consulting/consultantpeople",
+		// 	"style":{
+		// 		"titleNView": false,
+		// 		"navigationStyle":"default",
+		// 		"navigationBarTitleText":"恒裕买房__为买房人服务"
+		// 	}
+		// },
+		{
+			"path":"components/follow/me",
+			"style":{
+				"titleNView": false,
+				"navigationStyle":"default",
+				"navigationBarTitleText":"个人中心"
+			}
+		},
+		{
+			"path":"components/follow/follow",
+			"style":{
+				"titleNView": false,
+				"navigationStyle":"default",
+				"navigationBarTitleText":"我的关注"
+			}
+		},
+		{
+			"path":"components/follow/preview",
+			"style":{
+				"titleNView": false,
+				"navigationStyle":"default",
+				"navigationBarTitleText":"我的预览"
+			}
+		},
+		{
+			"path":"components/housenews/housenews",
+			"style":{
+				"titleNView": false,
+				"navigationStyle":"default",
+				"navigationBarTitleText":"楼盘详细"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF",
+		"navigationStyle":"custom"
+	},
+	"tabBar":{
+		"color":"#979797",
+		"selectedColor":"#255CEE",
+		"list":[
+			{
+				// tabbar文字
+				"text":"首页",
+				// 页面要实现的内容
+				"pagePath":"pages/index/index",
+				// 未被选中状态下的图片
+				"iconPath":"./static/tabbaricon/index1.png",
+				// 被选中状态下的图片
+				"selectedIconPath":"./static/tabbaricon/index.png"
+			},
+			{
+				"text":"楼盘",
+				"pagePath":"pages/floor/floor",
+				"iconPath":"./static/tabbaricon/follow1.png",
+				"selectedIconPath":"./static/tabbaricon/follow.png"
+			},
+			{
+				"text":"我的",
+				"pagePath":"pages/aboutme/aboutme",
+				"iconPath":"./static/tabbaricon/aboutme.png",
+				"selectedIconPath":"./static/tabbaricon/aboutme1.png"
+			}
+		]
+	}
+}

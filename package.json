@@ -1,0 +1,13 @@
+{
+    "id": "s-region-slider",
+    "name": "region-slider",
+    "version": "1.4",
+    "description": "uni slider双向滑动,兼容多h5,以及多平台的小程序",
+    "keywords": [
+        "双向滑动",
+        "slider",
+        "slider双向滑动",
+        "区间滑动",
+        "slider区间滑动"
+    ]
+}
